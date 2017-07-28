@@ -1,0 +1,655 @@
+/* --GLOBAL SETTINGS-- */
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold.woff2') format('woff2'),
+         url('../fonts/raleway-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold.woff2') format('woff2'),
+         url('../fonts/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('../fonts/raleway-black.woff2') format('woff2'),
+         url('../fonts/raleway-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light.woff2') format('woff2'),
+         url('../fonts/raleway-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header, section, footer {
+  width: 100%;
+  font-family: 'ralewaysemibold', sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1055px;
+  margin: 0 auto;
+}
+
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+.col-33 {
+  width: 33.33%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-60 {
+  width: 60.6%;
+}
+
+.col-39 {
+  width: 39.4%;
+}
+
+.container .row span {
+  color: #24ba9f;
+  font-family: 'ralewaybold', sans-serif;
+}
+
+/* --HEADER-- */
+
+header {
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 13px 0 11px 0;
+  letter-spacing: 1.2px;
+  border-top: 0px solid #101010;
+  border-bottom: 1px solid #464646;
+}
+
+ul {
+  float: right;
+  position: relative;
+}
+
+li a:hover {
+  color: #dedede;
+}
+
+nav li > a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 30px;
+}
+
+nav.col li:nth-last-of-type(2) {
+  padding: 1px 34px 0 0;
+}
+
+nav.col li:nth-last-of-type(3) {
+  margin: 0 47px 0 0;
+}
+
+header nav.col {
+  float: right;
+}
+
+header nav.col li {
+  display: inline-block;
+}
+
+header nav.col li:hover > ul {
+  display: block;
+}
+
+ul.dropdown {
+  display: none;
+  background: black;
+  position: absolute;
+  top: 39px;
+  left: -18px;
+  width: 120px;
+  text-transform: none;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+ul.dropdown::before {
+  position: absolute;
+  content: '';
+  top: -9px;
+  left: 37%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 9px solid black;
+  width: 0;
+  height: 0;
+}
+
+header nav.col .dropdown li {
+  padding: 4px 13px;
+}
+
+ul.dropdown li > a {
+  font-family: 'ralewayregular', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0px;
+  letter-spacing: -0.1px;
+  padding-bottom: 0;
+}
+
+/* --SECTION SLIDER-- */
+
+section.slider {
+  width: 100%;
+  height: 504px;
+  background: none;
+  background: -webkit-linear-gradient(#fafafa, #f6f6f6, #ceced6); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fafafa, #f6f6f6, #ceced6); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fafafa, #f6f6f6, #ceced6); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fafafa, #f6f6f6, #ceced6); /* Standard syntax (must be last) */
+  border-bottom: 1px solid #e7e6e8;
+}
+
+section .row .header-img {
+  width: 485px;
+  padding-top: 67px;
+  padding-left: 31px;
+  padding-bottom: 10px
+}
+
+.header-img img {
+  max-width: 590px;
+  height: 424px;
+  margin-left: -69px;
+}
+
+section .about {
+  margin-top: 134px;
+  width: 433px;
+}
+
+section .row h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding-bottom: 29px;
+  text-align: center;
+  word-spacing: -1.5px;
+}
+
+section .col p {
+  font-family: 'ralewayregular', sans-serif;
+  text-align: center;
+  line-height: 22px;
+  letter-spacing: 1px;
+  word-spacing: 0.8px;
+}
+
+input[type="submit"] {
+  display: block;
+  font-family: 'ralewayregular';
+  text-transform: uppercase;
+  font-size: 25px;
+  background: #24baa0;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 4px 0 0 13px;
+  margin: 27px auto 0 auto;
+  width: 264px;
+  height: 52px;
+  letter-spacing: -0.7px;
+}
+
+input[type="submit"]:hover {
+  background: #1CCEAF;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container a span.scroll {
+  position: relative;
+  top: 209px;
+  font-family: 'ralewaylight', sans-serif;
+  color: #24baa0;
+  font-size: 78px;
+}
+
+.container a span.scroll:hover {
+  color: #2ce2c3;
+}
+
+.container a span.left {
+  left: -914px;
+}
+
+.container a span.right {
+  left: 51px;
+}
+
+/* --SECTION NEWS-- */
+
+section.news {
+  width: 100%;
+  height: 350px;
+}
+
+section.news .news1 {
+  width: 329px;
+  height: 225px;
+  background: url('../images/box1_img.jpg');
+  margin-top: 28px;
+}
+
+section.news .news2 {
+  width: 329px;
+  height: 225px;
+  background: url('../images/box2_img.jpg');
+  margin-top: 28px;
+  margin-left: 6px;
+}
+
+section.news .news3 {
+  width: 340px;
+  height: 254px;;
+  border: 1px solid #ddd;
+  margin-left: 11px;
+  margin-top: 27px;
+  padding: 14px 0 0 5px;
+}
+
+section.news .title-bg {
+  width: 100%;
+  height: 63px;
+  float: left;
+  margin-top: 148px;
+  background: rgba(255, 255, 255, 0.38);
+}
+
+section.news .col span {
+  display: block;
+  padding: 15px 0 0 17px;
+  color: black;
+  font-family: 'ralewaysemibold', sans-serif;
+  font-size: 16px;
+}
+
+section.news .col span::after {
+  display: block;
+  content: '';
+  width: 138px;
+  height: 6px;
+  background: #24ba9f;
+}
+
+section.news p {
+  text-align: left;
+}
+
+section.news p:first-of-type {
+  padding: 13px 21px 0 16px;
+  line-height: 21px;
+  word-spacing: -3px;
+}
+
+section.news p:nth-of-type(2) {
+  padding: 18px 21px 0 16px;
+  line-height: 21px;
+  word-spacing: -3px;
+}
+
+/* --SECTION PRICES-- */
+
+section.prices {
+  width: 100%;
+  background: #f1f1f1;
+}
+
+section.prices span.box-title {
+  display: block;
+  font-family: 'relawaysemibold', sans-serif;
+  font-size: 22px;
+  color: black;
+  padding-top: 45px;
+  letter-spacing: -0.4px;
+}
+
+section.prices span.box-title::after {
+  display: block;
+  content: '';
+  width: 319px;
+  height: 8px;
+  background: #24ba9f;
+  margin-top: 4px;
+}
+
+section.prices .price-table {
+  position: relative;
+  margin-top: 76px;
+  margin-bottom: 66px;
+  width: 328px;
+  height: 500px;
+  border: 2px solid #d6d6d6;
+  background: #f9f9f9;
+}
+
+section.prices .two {
+  margin: 76px auto 66px auto;
+}
+
+section.prices .three {
+  float: right;
+}
+
+section.prices .price-table:hover {
+  background: #24ba9f;
+  border: 2px solid #24ba9f;
+  cursor: pointer;
+}
+
+section.prices .price-table:hover > .price-table-top-circle {
+  background: #24ba9f;
+  border: 2px solid #24ba9f;
+}
+
+section.prices .price-table:hover > .price-table-top-circle > .circle-in-cirlce {
+  background: white;
+}
+
+section.prices .price-table:hover > .price-table-title {
+  color: white;
+}
+
+section.prices .price-table:hover > .price-circle {
+  border: 2px solid #24ba9f;
+}
+
+section.prices .price-table:hover > .price-circle span {
+  color: #24ba9f;
+}
+
+section.prices .price-table:hover > span.option {
+  background: white;
+}
+
+section.prices .price-table:hover > input[name="submit"] {
+  background: white;
+  color: #24ba9f;
+}
+
+section.prices .price-table-top-circle {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background: white;
+  border: 2px solid #d6d6d6;
+  border-radius: 50%;
+  margin: 0 auto;
+  top: -41px;
+  left: 132px;
+}
+
+section.prices .circle-in-cirlce {
+  width: 26px;
+  height: 26px;
+  background: #c2c2c2;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+section.prices .price-table span {
+  display: block;
+  font-family: 'ralewaysemibold', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+section.prices .price-table span.option {
+  display: block;
+  font-family: 'ralewayregular', sans-serif;
+  text-align: center;
+  background: #e4e4e4;
+  margin-top: 0;
+  padding-top: 4px;
+  padding-bottom: 9px;
+  font-size: 25px;
+  letter-spacing: -0.8px;
+  padding-left: 5px;
+  color: #a7a2a2;
+}
+
+section.prices .price-table span.option:nth-of-type(2n + 1) {
+  background: #f1f1f1;
+}
+
+section.prices .price-table span.option-empty {
+  display: block;
+  background: transparent;
+  width: 100%;
+  height: 45px;
+  padding: 0;
+}
+
+section.prices .price-circle {
+  width: 130px;
+  height: 130px;
+  background: white;
+  border: 2px solid #d6d6d6;
+  border-radius: 50%;
+  margin: 0 auto 35px auto;
+}
+
+section.prices .price-circle span {
+  font-size: 45px;
+  padding-left: 6px;
+  padding-bottom: 3px;
+  color: #c2c2c2;
+}
+
+section.prices .price-circle sup {
+  font-size: 14px;
+  top: -1.7em;
+}
+
+section.prices .price-circle span:nth-of-type(2) {
+  font-size: 15px;
+  padding: 0;
+  letter-spacing: -0.5px;
+}
+
+input[name="submit"] {
+  width: 121px;
+  height: 32px;
+  font-size: 16px;
+  padding: 0 0px 0 0px;
+  letter-spacing: 0.1px;
+}
+
+/* --SECTION CONTACT -- */
+
+section.contact {
+  width: 100%;
+  background: white;
+}
+
+section.contact span.box-title  {
+  display: block;
+  font-family: 'relawaysemibold', sans-serif;
+  font-size: 22px;
+  color: black;
+  padding: 33px 0 0 6px;
+  letter-spacing: -0.4px;
+}
+
+section.contact span.box-title::after {
+  display: block;
+  content: '';
+  width: 320px;
+  height: 8px;
+  background: #24ba9f;
+  margin-top: 4px;
+  margin-left: -1px;
+}
+
+form[name="contact"] {
+  margin: 45px 0 0 5px;
+}
+
+form[name="contact"] ::placeholder {
+  font-family: 'ralewaylight', sans-serif;
+  color: #cacaca;
+}
+
+input[name="name"],
+input[name="email"],
+textarea[name="message"] {
+  width: 100%;
+  border: 1px solid #27c7ab;
+  resize: none;
+  padding: 12px 0 12px 13px;
+  font-family: 'ralewayregular', sans-serif;
+  font-size: 34px;
+  letter-spacing: -1px;
+  outline: none;
+}
+
+input[name="email"] {
+  margin: 26px 0 25px 0;
+}
+
+textarea[name="message"] {
+  height: 189px;
+}
+
+section.contact .col img {
+  display: block;
+  width: 263px;
+  height: 210px;
+  margin: 16px auto 0 auto;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+  margin: 33px 0 0 57px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid #27c7ab;
+}
+
+input[type=checkbox]:checked + label {
+  background: url('../images/form_ok.jpg') no-repeat 1px 10px;
+  background-size: 40px 32px;
+}
+
+section.contact .col-39 span {
+  display: inline-block;
+  width: 280px;
+  margin-left: 60px;
+  margin-top: 2px;
+  font-family: 'ralewayregular', sans-serif;
+  color: #cacaca;
+  font-size: 21px;
+  line-height: 23px;
+  letter-spacing: -0.7px;
+}
+
+section.contact input[type="submit"] {
+  width: 342px;
+  height: 71px;
+  font-family: 'ralewaybold',sans-serif;
+  font-size: 34px;
+  margin: 37px 0 0 56px;
+  padding: 2px 0 0 5px;
+  outline: none;
+}
+
+/* --FOOTER-- */
+
+footer {
+    margin: 60px 0 10px 0;
+    line-height: 49px;
+    padding: 20px 0;
+}
+
+.col-50 {
+  float: left;
+}
+
+footer .container .row .col span {
+  font-family: 'ralewayregular', sans-serif;
+  font-size: 15px;
+  color: #9b9b9b;
+  letter-spacing: 1.3px;
+}
+
+footer .col-50 ul li {
+  display: inline-block;
+}
+
+footer .col-50 ul li:hover {
+  opacity: 0.6;
+}
+
+footer .container .row .col .col-50 span {
+  display: block;
+  font-family: 'ralewaysemibold', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0.9px;
+}
+
+footer .container .row .col .col-50 span.bold {
+  display: inline-block;
+  font-family: 'ralewayextrabold', sans-serif;
+}
