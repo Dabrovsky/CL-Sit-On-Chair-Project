@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Sit On Chair</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <p class="col">Sit <span>on</span> chair</p>
+        <nav class="col">
+          <ul>
+            <li>
+              <a href="#">O firmie</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="#">Aktualności</a>
+                </li>
+                <li>
+                  <a href="#">Nasz team</a>
+                </li>
+                <li>
+                  <a href="#">Historia</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Galeria</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="slider">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header-img">
+            <img src="images/black_chair.png">
+          </div>
+        </div>
+        <div class="col about">
+          <h1>Sit <span>on</span> our <span>chair</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+            Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
+          </p>
+          <input type="submit" value="Zobacz więcej">
+        </div>
+        <a href="#">
+          <span class="scroll left"><</span>
+        </a>
+        <a href="#">
+          <span class="scroll right">></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <div class="row">
+        <div class="col col-33">
+          <div class="news1">
+            <div class="title-bg">
+              <span>Chair CLAIR</span>
+            </div>
+          </div>
+        </div>
+        <div class="col col-33">
+          <div class="news2">
+            <div class="title-bg">
+              <span>Chair MARGARITA</span>
+            </div>
+          </div>
+        </div>
+        <div class="col col-33">
+          <div class="news3">
+            <span>Finds all inputs</span>
+            <p>
+              Finds all inputs that are not checked and highlights the next sibling span.
+              Notice there is no change when clicking the checkboxes since no click events have been linked.
+            </p>
+            <p>
+              Notice there is no change when clicking the checkboxes since no click events have been
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <span class="box-title">CENNIK</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-33">
+          <div class="price-table">
+            <div class="price-table-top-circle">
+              <div class="circle-in-cirlce">
+              </div>
+            </div>
+            <span class="price-table-title">BASIC PLAN</span>
+            <div class="price-circle">
+              <span>85<sup>99</sup></span>
+              <span>PLN / MSC</span>
+            </div>
+            <span class="option">Zakup towaru + dowóz</span>
+            <span class="option">Serwis</span>
+            <span class="option-empty"></span>
+            <span class="option-empty"></span>
+            <input type="submit" name="submit" value="DOŁĄCZ">
+          </div>
+        </div>
+        <div class="col col-33">
+          <div class="price-table two">
+            <div class="price-table-top-circle">
+              <div class="circle-in-cirlce">
+              </div>
+            </div>
+            <span class="price-table-title">STANDARD PLAN</span>
+            <div class="price-circle">
+              <span>95<sup>99</sup></span>
+              <span>PLN / MSC</span>
+            </div>
+            <span class="option">Zakup towaru + dowóz</span>
+            <span class="option">Serwis</span>
+            <span class="option">Gwarancja 5 lat</span>
+            <span class="option-empty"></span>
+            <input type="submit" name="submit" value="DOŁĄCZ">
+          </div>
+        </div>
+        <div class="col col-33">
+          <div class="price-table three">
+            <div class="price-table-top-circle">
+              <div class="circle-in-cirlce">
+              </div>
+            </div>
+            <span class="price-table-title">ADVANCE PLAN</span>
+            <div class="price-circle">
+              <span>211<sup>00</sup></span>
+              <span>PLN / MSC</span>
+            </div>
+            <span class="option">Zakup towaru + dowóz</span>
+            <span class="option">Serwis</span>
+            <span class="option">Gwarancja 6 lat</span>
+            <span class="option">Porady projektanta</span>
+            <input type="submit" name="submit" value="DOŁĄCZ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <span class="box-title">KONTAKT</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-60">
+          <form action="" method="post" name="contact">
+            <input type="text" name="name" placeholder="Imię">
+            <input type="email" name="email" placeholder="email">
+            <textarea name="message" placeholder="Wiadomość"></textarea>
+          </form>
+        </div>
+        <div class="col col-39">
+          <img src="./images/red_chair.png">
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox">
+            <span>Zgadzam się na przetwarzanie danych osobowych</span>
+          </label>
+          <input type="submit" value="WYŚLIJ">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col col-60">
+          <span>Copyright 2014 | All Rights Reserved. - Sit On Chair</span>
+        </div>
+        <div class="col col-39">
+          <div class="col-50">
+            <ul>
+              <li>
+                <a href="#"><img src="./images/flickr.png"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/vimeo.png"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/pinterest.png"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/twitter.png"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-50">
+            <span>Sit <span class="bold">on</span> chair</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer
+</body>
+</html>
