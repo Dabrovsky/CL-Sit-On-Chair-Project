@@ -1,4 +1,5 @@
 # Sit On Chair
+Website project based on PSD file
 Made during the Coders Lab workshop
 
 ## Technologies used
