@@ -189,14 +189,14 @@ section.slider {
   border-bottom: 1px solid #e7e6e8;
 }
 
-section .row .header-img {
+section .row .slider-img {
   width: 485px;
   padding-top: 67px;
   padding-left: 31px;
   padding-bottom: 10px
 }
 
-.header-img img {
+.slider-img img {
   max-width: 590px;
   height: 424px;
   margin-left: -69px;
@@ -232,7 +232,6 @@ input[type="submit"] {
   color: white;
   border: 0;
   border-radius: 8px;
-  padding: 4px 0 0 13px;
   margin: 27px auto 0 auto;
   width: 264px;
   height: 52px;
@@ -243,11 +242,7 @@ input[type="submit"]:hover {
   background: #1CCEAF;
 }
 
-.container a {
-  text-decoration: none;
-}
-
-.container a span.scroll {
+.container span.scroll {
   position: relative;
   top: 209px;
   font-family: 'ralewaylight', sans-serif;
@@ -255,15 +250,16 @@ input[type="submit"]:hover {
   font-size: 78px;
 }
 
-.container a span.scroll:hover {
+.container span.scroll:hover {
   color: #2ce2c3;
+  cursor: pointer;
 }
 
-.container a span.left {
+.container span.left {
   left: -914px;
 }
 
-.container a span.right {
+.container span.right {
   left: 51px;
 }
 
@@ -299,6 +295,7 @@ section.news .news3 {
 }
 
 section.news .title-bg {
+  display: block;
   width: 100%;
   height: 63px;
   float: left;
@@ -465,14 +462,6 @@ section.prices .price-table span.option:nth-of-type(2n + 1) {
   background: #f1f1f1;
 }
 
-section.prices .price-table span.option-empty {
-  display: block;
-  background: transparent;
-  width: 100%;
-  height: 45px;
-  padding: 0;
-}
-
 section.prices .price-circle {
   width: 130px;
   height: 130px;
@@ -501,11 +490,267 @@ section.prices .price-circle span:nth-of-type(2) {
 }
 
 input[name="submit"] {
+  position: absolute;
+  bottom: 20px;
+  left: 32%;
   width: 121px;
   height: 32px;
   font-size: 16px;
   padding: 0 0px 0 0px;
   letter-spacing: 0.1px;
+}
+
+section.prices .active {
+  background: #24ba9f;
+  border: 2px solid #24ba9f;
+}
+
+section.prices .active > .price-table-top-circle {
+  background: #24ba9f;
+  border: 2px solid #24ba9f;
+}
+
+section.prices .active > .price-table-top-circle > .circle-in-cirlce {
+  background: white;
+}
+
+section.prices .active > .price-circle {
+  border: 2px solid #24ba9f;
+}
+
+section.prices .active > .price-circle span {
+  color: #24ba9f;
+}
+
+section.prices .active > .price-table-title {
+  color: white;
+}
+
+section.prices .active span.option {
+  background: white;
+}
+
+section.prices .active > input[name="submit"] {
+  background: white;
+  color: #24ba9f;
+}
+
+/* --SECTION SHOP-- */
+
+.application {
+  background-color: #f9f9f9;
+  padding: 30px 0;
+}
+
+.application h3 {
+  color: #575757;
+  font-size: 18px;
+}
+
+.application header.align_right {
+  text-align: right;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.application header.align_right .box-title {
+  display: block;
+}
+
+.application .float .box-title {
+  color: black;
+  font-size: 18px;
+}
+
+.form {
+  margin-top:50px;
+}
+
+.drop_down_list {
+  border:1px solid #8de0d2;
+  width: 90%;;
+  height:38px;
+  background-color: white;
+  margin-top:22px;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.container .row span.list_label {
+  font-size: 20px;
+  color: #e2e2e2;
+  font-family: 'ralewaylight', Arial, Tahoma, sans-serif;
+}
+
+.check-box span.checkbox_transport {
+  display: inline-block;
+  width: 280px;
+  margin-left: 60px;
+  margin-top: 18px;
+  font-family: 'ralewayregular', sans-serif;
+  color: #cacaca;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: -0.7px;
+}
+
+.check-box input[type=checkbox] + label {
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+  margin: 30px 0 0 0;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid #27c7ab;
+}
+
+.inline_text {
+  display: inline-block;
+  width: 228px;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 15px;
+  color: #aeaeae;
+}
+
+.image_part img {
+  margin-top: 110px;
+  margin-left: 38px;
+}
+
+.application .green_bell {
+  background-color: #24baa0;
+  width: 200px;
+  height: 6px;
+  display: inline-block;
+  margin: 5px 0 5px 0;
+}
+
+.summary_panel {
+  background-color: white;
+  width:100%;
+  padding:10px;
+  margin-top: 38px;
+}
+
+.application .green_button {
+  background-color: #27c7ab;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+  padding: 10px 30px;
+  font-size: 24px;
+  display: block;
+  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 20px auto;
+}
+
+.panel_left {
+  float: left;
+  width: 50%;
+  vertical-align: top;
+  padding-bottom:10px;
+  border-bottom:1px solid #e7e7e7;
+  height: 149px;
+}
+
+.panel_right {
+  display: inline-block;
+  width: 50%;
+  border-left:1px solid #e7e7e7;
+  text-align: right;
+  vertical-align: top;
+  padding-bottom:10px;
+  border-bottom:1px solid #e7e7e7;
+  height: 149px;
+}
+
+.panel_left h4 , .panel_right h4{
+  color: #24baa0;
+  font-size: 23px;
+}
+
+.container .row .panel_left span{
+  margin-top:10px;
+  font-size: 22px;
+  color: #5b5a5a;
+  display: block;
+  font-family: 'ralewaysemibold', sans-serif;
+}
+
+.container .row .panel_right span {
+  display: block;
+  font-family: 'ralewaysemibold', sans-serif;
+  font-size: 22px;
+  color: #24baa0;
+  margin-top:10px;
+}
+
+.sum_label {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+  font-size: 22px;
+  color: #5b5a5a;
+}
+
+.sum {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 22px;
+  color: #24baa0;
+}
+
+.list_arrow {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #24baa0;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  cursor: pointer;
+}
+
+.list_panel {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: 0;
+  width: 316px;
+  list-style: none;
+  margin: 0;
+  left: -1px;
+  z-index: 2;
+  position: absolute;
+  top: 37px;
+  display: none;
+}
+
+.list_panel li {
+  padding: 8px 0 8px 13px;
+  cursor: pointer;
+  color: #585858;
+}
+
+.list_panel li:hover {
+  background: #f1f1f1;
+}
+
+.title {
+  height: 30px;
+}
+
+.float {
+  float: left;
 }
 
 /* --SECTION CONTACT -- */
@@ -550,14 +795,11 @@ textarea[name="message"] {
   border: 1px solid #27c7ab;
   resize: none;
   padding: 12px 0 12px 13px;
+  margin: 0 0 25px 0;
   font-family: 'ralewayregular', sans-serif;
   font-size: 34px;
   letter-spacing: -1px;
   outline: none;
-}
-
-input[name="email"] {
-  margin: 26px 0 25px 0;
 }
 
 textarea[name="message"] {
@@ -579,7 +821,7 @@ input[type=checkbox] + label {
   display: inline-block;
   width: 49px;
   height: 49px;
-  margin: 33px 0 0 57px;
+  margin: 13px 0 0 57px;
   background-position: 0 0;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -587,8 +829,8 @@ input[type=checkbox] + label {
 }
 
 input[type=checkbox]:checked + label {
-  background: url('../images/form_ok.jpg') no-repeat 1px 10px;
-  background-size: 40px 32px;
+  background: url('../images/form_ok.png') no-repeat 1px 6px;
+  background-size: 44px 36px;
 }
 
 section.contact .col-39 span {
@@ -611,6 +853,51 @@ section.contact input[type="submit"] {
   margin: 37px 0 0 56px;
   padding: 2px 0 0 5px;
   outline: none;
+}
+
+section.contact .name, section.contact .mail, section.contact .textarea {
+  display: none;
+}
+
+section.contact .form_alert {
+  position: relative;
+  top: -8px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #f91919;
+  color: white;
+  font-size: 16px;
+  font-family: 'ralewayregular', sans-serif;
+}
+
+section.contact .form_alert::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 36px;
+  border: 10px solid transparent;
+  border-top: 10px solid red;
+}
+
+section.contact span.checkbox_alert {
+  display: none;
+  position: relative;
+  top: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #f91919;
+  color: white;
+  font-size: 16px;
+  font-family: 'ralewayregular', sans-serif;
+}
+
+section.contact span.checkbox_alert::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 40px;
+  border: 10px solid transparent;
+  border-top: 10px solid red;
 }
 
 /* --FOOTER-- */
