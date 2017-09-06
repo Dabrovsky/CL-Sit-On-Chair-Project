@@ -43,8 +43,14 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="header-img">
+          <div class="slider-img">
             <img src="images/black_chair.png">
+          </div>
+          <div class="slider-img">
+            <img src="images/red.png">
+          </div>
+          <div class="slider-img">
+            <img src="images/orange.png">
           </div>
         </div>
         <div class="col about">
@@ -55,12 +61,8 @@
           </p>
           <input type="submit" value="Zobacz więcej">
         </div>
-        <a href="#">
           <span class="scroll left"><</span>
-        </a>
-        <a href="#">
           <span class="scroll right">></span>
-        </a>
       </div>
     </div>
   </section>
@@ -69,14 +71,14 @@
     <div class="container">
       <div class="row">
         <div class="col col-33">
-          <div class="news1">
+          <div class="news1 post">
             <div class="title-bg">
               <span>Chair CLAIR</span>
             </div>
           </div>
         </div>
         <div class="col col-33">
-          <div class="news2">
+          <div class="news2 post">
             <div class="title-bg">
               <span>Chair MARGARITA</span>
             </div>
@@ -119,8 +121,6 @@
             </div>
             <span class="option">Zakup towaru + dowóz</span>
             <span class="option">Serwis</span>
-            <span class="option-empty"></span>
-            <span class="option-empty"></span>
             <input type="submit" name="submit" value="DOŁĄCZ">
           </div>
         </div>
@@ -138,7 +138,6 @@
             <span class="option">Zakup towaru + dowóz</span>
             <span class="option">Serwis</span>
             <span class="option">Gwarancja 5 lat</span>
-            <span class="option-empty"></span>
             <input type="submit" name="submit" value="DOŁĄCZ">
           </div>
         </div>
@@ -164,6 +163,82 @@
     </div>
   </section>
 
+  <section class="application">
+    <div class="container">
+      <div class="row">
+        <section class="col-33 float">
+          <span class="box-title">SKOMPONUJ SWOJE KRZESŁO</span>
+          <span class="green_bell"></span>
+          <div class="form">
+            <div class="drop_down_list" id="typ">
+              <span class="list_label">Wybierz rodzaj</span>
+              <span class="list_arrow"></span>
+              <ul class="list_panel">
+                <li data-price="200">Clair</li>
+                <li data-price="210">Margarita</li>
+                <li data-price="220">Selena</li>
+              </ul>
+            </div>
+            <div class="drop_down_list" id="color">
+              <span class="list_label">Wybierz kolor</span>
+              <span class="list_arrow"></span>
+              <ul class="list_panel">
+                <li data-price="10">Czerwony</li>
+                <li data-price="20">Czarny</li>
+                <li data-price="30">Pomarańczowy</li>
+              </ul>
+            </div>
+            <div class="drop_down_list" id="pattern">
+              <span class="list_label">Wybierz materiał</span>
+              <span class="list_arrow"></span>
+              <ul class="list_panel">
+                <li data-price="0">Tkanina</li>
+                <li data-price="10">Skóra</li>
+              </ul>
+            </div>
+            <div class="check-box">
+              <input type="checkbox" id="transport" data-transport-price="200">
+              <label for="transport">
+                <span class="checkbox_transport">Transport</span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="image_part col-33 float">
+          <img src="images/red_chair.png">
+          <img src="images/blck_chair.png">
+          <img src="images/orange_chair.png">
+        </section>
+
+        <section class="col-33 float">
+          <header class="align_right">
+            <span class="box-title">PODSUMOWANIE</span>
+            <span class="green_bell"></span>
+          </header>
+
+          <div class="summary_panel">
+            <div class="panel_left">
+              <h4 class="title">Twój fotel</h4>
+              <span class="color"></span>
+              <span class="pattern"></span>
+              <span class="transport"></span>
+            </div>
+            <div class="panel_right">
+              <h4 class="title value"></h4>
+              <span class="color value"></span>
+              <span class="pattern value"></span>
+              <span class="transport value"></span>
+            </div>
+            <div class="sum_label">SUMA</div>
+            <div class="sum">0 zł</div>
+          </div>
+          <a href="" class="green_button">Zamawiam</a>
+        </section>
+      </div>
+    </div>
+  </section>
+
   <section class="contact">
     <div class="container">
       <div class="row">
@@ -174,18 +249,22 @@
       <div class="row">
         <div class="col col-60">
           <form action="" method="post" name="contact">
+            <span class="form_alert name">Imię musi zawierać 3 znaki</span>
             <input type="text" name="name" placeholder="Imię">
+            <span class="form_alert mail">Nieprawidłowy adres email</span>
             <input type="email" name="email" placeholder="email">
+            <span class="form_alert textarea">Wiadomość musi zawierać 10 znaków</span>
             <textarea name="message" placeholder="Wiadomość"></textarea>
           </form>
         </div>
         <div class="col col-39">
           <img src="./images/red_chair.png">
+          <span class="checkbox_alert">Proszę zaakceptować warunki</span>
           <input type="checkbox" id="checkbox">
           <label for="checkbox">
             <span>Zgadzam się na przetwarzanie danych osobowych</span>
           </label>
-          <input type="submit" value="WYŚLIJ">
+          <input type="submit" value="WYŚLIJ" id="send">
         </div>
       </div>
     </div>
@@ -220,6 +299,7 @@
         </div>
       </div>
     </div>
-  </footer
+  </footer>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
