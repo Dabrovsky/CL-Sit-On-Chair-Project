@@ -1,9 +1,5 @@
 # Sit On Chair
-__Website project based on PSD file__
-
-Made during the Coders Lab workshop
-
-Coded by __Wojciech Dąbrowski__
+Website project based on PSD file. Made during the Coders Lab workshop. Coded by __Wojciech Dąbrowski__
 
 ## Technologies used
 HTML + CSS + JavaScript
